@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------------------------------------------------------
+Navbar
+----------------------------------------------------------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background-color: #e1dfea;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+}
+.items .logo img{
+    width: 100px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin-left: 3rem;
+}
+.menu li a{
+    padding-left: 30px;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.menu li a:hover{
+    color: red;
+    text-align: center;
+}
+
+.btn button{
+    padding: 14px 25px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    font-family: sans-serif;
+    background-color: #200d66;
+}
+
+/* -----------------------------------------------------------
+Main
+----------------------------------------------------------- */
+
+main{
+    height: auto;
+    width: 100%;
+}
+
+main  .infobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+main  .infobox .leftbox{
+    /* background-color: rgb(125, 21, 95); */
+    height: 90%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+main  .infobox .leftbox .imgbox{
+    /* background-color: rgb(108, 125, 21); */
+    background-image: url(/Images/images.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main  .infobox .rightbox{
+    height: 90%;
+    width: 60%;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+main  .infobox .rightbox h4,span{
+    color: #cf2f34;
+    font-weight: 600;
+}
+main  .infobox .rightbox h1{
+    font-weight: 800;
+
+}
+main  .infobox .rightbox p{
+    font-size: 12px;
+    margin: 5px 0px;
+}
+main .services{
+    /* background-color: #cf2f34; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main  .services .image{
+    width: 300px;
+    height: 90%;
+    background-color: aqua;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+main .services h3{
+    padding: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    font-family:sans-serif;
+}
+main .services .one{
+    background-image: url(/Images/services_1.jpeg);
+}
+main .services .two{
+    background-image: url(/Images/service_2.jpeg);
+}
+main .services .three{
+    background-image: url(/Images/services_3.jpeg);
+}
+main .client{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+main .client .clientlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border: 1px solid rgba(54, 54, 54, 0.251);
+    border-radius: 50%;
+    overflow: hidden;
+}
+main .client .clientlogo img{
+    height: 100%;
+    width: 100%;
+}
+
+/* -----------------------------------------------------------
+Footer
+----------------------------------------------------------- */
+footer .footer1{
+    width: 100%;
+    height: 300px;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer .footer1 .clientex{
+    padding: 10px 20px;
+    width: 70%;
+    height: 100px;
+    background-color: #200d66;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    top: -50px;
+}
+footer .footer1 .clientex .head{
+    font-family: "Lato", system-ui;
+  font-weight: 900;
+  font-style: normal;
+
+}
+footer .footer1 .clientex button{
+    padding: 13px 24px;
+    border-radius: 50px;
+    background-color: #e31e25;
+    border: 0;
+    color: white;
+    font-weight: 600;
+}
+footer .footer1 .footeritems{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    color: #d8d8d8;
+    font-family: sans-serif;
+    gap: 30px;
+}
+footer .footer1 .footeritems li{
+    margin-top: 10px;
+    font-size: 10px;
+}
+footer .footer1 .footeritems h3{
+    font-size: 13px;
+}
+footer .footer1 .footeritems .company{
+    width: 250px;
+}
+footer .footer1 .footeritems .company .socialmedia{
+    margin-top: 20px;
+    display: flex;
+}
+footer .footer1 .footeritems .company .socialmedia .medialogo{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+footer .footer1 .footeritems .company .socialmedia .medialogo:hover{
+    /* background-color: #cf2f34; */
+    color: #cf2f34;
+}
+footer .footer1 .footeritems .link{
+    width: 250px;
+}
+footer .footer1 .footeritems .ourservices{
+    width: 250px;
+}
+footer .footer1 .footeritems .contact{
+    width: 300px;
+}
+
+
+
+
+footer .footer2{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
